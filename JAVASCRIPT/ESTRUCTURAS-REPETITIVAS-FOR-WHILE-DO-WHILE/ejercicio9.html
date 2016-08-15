@@ -1,0 +1,32 @@
+<!-- CALIFICACIONES ALUMNOS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		var suma=0;
+		var i=0;
+		var menor=21;
+		var numeroAlumnos=parseInt(prompt("¿Cuántos alumnos son?"));
+		while(numeroAlumnos>0 && i<numeroAlumnos){
+			i++;
+			var nota = 0;
+			do{
+				nota=parseInt(prompt("introducir la nota"+ i));
+			}while(nota<0)
+			suma+=nota;
+			if(nota<menor){
+				menor=nota;
+			}
+		}
+
+		alert('promedio es'+Math.floor(suma/numeroAlumnos));
+		alert('la nota baja es '+menor);
+	</script>
+</head>
+<body>
+	
+</body>	
+</html>
+

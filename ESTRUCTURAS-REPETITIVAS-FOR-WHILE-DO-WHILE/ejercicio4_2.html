@@ -1,0 +1,27 @@
+<!--  EDAD PROMEDIO-DO WHILE   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		var suma=0;
+		var i=0;
+		var numeroAlumnos=parseInt(prompt("¿Cuántos alumnos son?"));
+		do{
+			i++;
+			var edad = 0;
+			do{
+				edad=parseInt(prompt("introducir la edad"+i));
+			}while(edad<0)
+			suma+=edad;
+		}while(numeroAlumnos>0 && i<numeroAlumnos)
+		var promedio=suma/numeroAlumnos;
+		alert('promedio es'+promedio);
+
+	</script>
+</head>
+<body>
+	
+</body>	
+</html>
